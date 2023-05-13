@@ -5,18 +5,19 @@
     "paragraph": "The only classes in Chiplun that your child will ever need!"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "SM classes started in 2016 by Saquib and Muajja Dalvi with a vision to give quality education so that students can achieve their dreams.",
+    "paragraph2": " Here we develop students learning and problem solving ability by teaching them from basic concepts so that they can score good not only in school exams but in various competitive/entrance exams also.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "We understand the students pain point",
+      "We work closely with the parents as well",
+      "We have been around for a long time now",
+      "We care for each and every student"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "We create an interactive environment",
+      "We make learning fun and interesting",
+      "We follow path which works well for students",
+      "We are always open for constructive feedbacks"
     ]
   },
   "Gallery": [
@@ -69,33 +70,18 @@
   "Services": [
     {
       "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Regular classes from standard 6th to 10th (State and CBSE board)",
+      "text": ""
     },
     {
       "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Regular classes for 11th and 12th (Science)",
+      "text": ""
     },
     {
       "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Diploma and Degree (Maths and Civil engineering subjects)",
+      "text": ""
     }
   ],
   "Testimonials": [
@@ -133,27 +119,21 @@
   "Team": [
     {
       "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "name": "Saquib Dalvi",
+      "job": "B.E. Civil (Mumbai University)",
+      "job1": "LCEE (VJTI)",
+      "job2": "10 Years field and 10 years plus teaching experience"
     },
     {
       "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "name": "Muajja Dalvi",
+      "job": "BSc (Chemistry)",
+      "job1": "",
+      "job2": "17 years plus teaching experience"
     }
   ],
   "Contact": {
-    "address": "SM Classes, Sakharwadi, Next to 9 to 9 supermarket",
+    "address": "Areej Park, Shop no 6 (A-wing), Sakharwadi (Mirjoli) Chiplun-415605, Ratnagiri - Maharashtra",
     "phone": "+91 99 230 830 01",
     "email": "saqdalvi@gmail.com",
     "facebook": "fb.com",
@@ -163,23 +143,38 @@
   "Features": [
     {
       "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Experienced Tutors",
+      "text": "We are a small yet strong team of experienced tutors."
     },
     {
       "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Clear Topic Explanations",
+      "text": "Explanation of all topics starting with basic concepts."
     },
     {
       "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Tests Based Preparations",
+      "text": "Regular tests on each topic."
     },
     {
       "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "Limited Students Batch",
+      "text": "To focus on the strength as well as weaknesses of each student we take limited students count per batch."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Progress Analysis",
+      "text": "Student’s progress analysis and reporting to parents."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Career Guidance",
+      "text": "Guidance for entrance exams."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Competitive Exams Practice",
+      "text": "MCQ practice for JEE/CET/NEET."
     }
   ]
 }
