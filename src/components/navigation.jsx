@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/images/smclasses-logo.jpeg";
 
 export const Navigation = (props) => {
   return (
@@ -18,7 +19,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            SM CLASSES
+            <img src={logo} alt="" />
           </a>{" "}
         </div>
 
