@@ -1,17 +1,14 @@
 @media screen and (max-width: 400px) {
-  #features {
-    width: 108vw;
-  }
   #about,
   #services,
   #testimonials,
   #team,
   #contact,
-  #footer {
-    width: 108vw;
-  }
-
-  #portfolio {
+  #footer, 
+  #toppers,
+  #features,
+  #portfolio
+   {
     width: 108vw;
   }
 }
