@@ -1,0 +1,35 @@
+.member {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.member .member-pic {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+}
+
+.member-pic:hover {
+    background: #000;
+    opacity: 0.7;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+
+.member p {
+    color: yellow;
+    margin-bottom: 0;
+    font-weight: 400;
+}

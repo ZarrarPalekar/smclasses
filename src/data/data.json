@@ -176,5 +176,38 @@
       "title": "Competitive Exams Practice",
       "text": "MCQ practice for JEE/CET/NEET."
     }
+  ],
+  "Toppers": [
+    {
+      "img": "img/toppers/huma.jpeg",
+      "details": "90.20% (SSC)",
+      "details2": "88.83% (HSC-Science)",
+      "name": "Huma Dalwai"
+    },
+    {
+      "img": "img/toppers/ishaan.jpeg",
+      "details": "88.17% (HSC-Science)",
+      "name": "Ishan Dalvi"
+    },
+    {
+      "img": "img/toppers/adeeya.jpeg",
+      "details": "90.80% (SSC)",
+      "name": "Adeeya Fakir"
+    },
+    {
+      "img": "img/toppers/humera.jpeg",
+      "details": "95.00% (SSC)",
+      "name": "Humera Kadiri"
+    },
+    {
+      "img": "img/toppers/miran.jpg",
+      "details": "90.13% (HSC-Science)",
+      "name": "Miran Wagle"
+    },
+    {
+      "img": "img/toppers/naflah.jpg",
+      "details": "89% (HSC-Science)",
+      "name": "Naflah Kalokhe"
+    }
   ]
 }
