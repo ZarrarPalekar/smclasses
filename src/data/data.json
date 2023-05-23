@@ -142,37 +142,37 @@
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
+      "icon": "fa fa-graduation-cap",
       "title": "Experienced Tutors",
       "text": "We are a small yet strong team of experienced tutors."
     },
     {
-      "icon": "fa fa-bullhorn",
+      "icon": "fa fa-check",
       "title": "Clear Topic Explanations",
       "text": "Explanation of all topics starting with basic concepts."
     },
     {
-      "icon": "fa fa-group",
+      "icon": "fa fa-file",
       "title": "Tests Based Preparations",
       "text": "Regular tests on each topic."
     },
     {
-      "icon": "fa fa-magic",
+      "icon": "fa fa-users",
       "title": "Limited Students Batch",
       "text": "To focus on the strength as well as weaknesses of each student we take limited students count per batch."
     },
     {
-      "icon": "fa fa-magic",
+      "icon": "fa fa-solid fa-list",
       "title": "Progress Analysis",
       "text": "Student’s progress analysis and reporting to parents."
     },
     {
-      "icon": "fa fa-magic",
+      "icon": "fa fa-rocket",
       "title": "Career Guidance",
       "text": "Guidance for entrance exams."
     },
     {
-      "icon": "fa fa-magic",
+      "icon": "fa fa-solid fa-arrow-up",
       "title": "Competitive Exams Practice",
       "text": "MCQ practice for JEE/CET/NEET."
     }
