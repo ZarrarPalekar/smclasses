@@ -69,17 +69,17 @@
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
+      "icon": "fa fa-user",
       "name": "Regular classes from standard 6th to 10th (State and CBSE board)",
       "text": ""
     },
     {
-      "icon": "fa fa-cart-arrow-down",
+      "icon": "fa fa-users",
       "name": "Regular classes for 11th and 12th (Science)",
       "text": ""
     },
     {
-      "icon": "fa fa-cloud-download",
+      "icon": "fa fa-graduation-cap",
       "name": "Diploma and Degree (Maths and Civil engineering subjects)",
       "text": ""
     }
