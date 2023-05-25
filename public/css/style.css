@@ -5,7 +5,7 @@ html {
   -webkit-font-smoothing: antialiased !important;
   color: #777;
   font-weight: 400;
-  width: 100vw !important;
+  width: 100% !important;
   height: 100vh !important;
 }
 h2,
@@ -206,8 +206,8 @@ a:focus,
 /* Header Section */
 .intro {
   display: table;
-  width: 100vw !important;
-  height: 100vh;
+  width: 100% !important;
+  height: 100vh !important;
   padding: 0;
   background: url(../img/intro-bg.jpg) center center no-repeat;
   background-color: #e5e5e5;
@@ -256,7 +256,7 @@ header .intro-text-black {
 #features {
   padding: 100px 0;
   background: #f6f6f6;
-  width: 100vw;
+  width: 100% !important;
 }
 #features i.fa {
   font-size: 38px;
