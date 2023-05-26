@@ -9,14 +9,14 @@ export const Header = (props) => {
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text-black">
                 <h1>
-                  {props.data ? props.data.title : "Loading"}
+                  We are
                   <span></span>
                 </h1>
                 <h1>
-                  {props.data ? props.data.title2 : "Loading"}
+                  SM Classes
                   <span></span>
                 </h1>
-                <p>{props.data ? props.data.paragraph : "Loading"}</p>
+                <p>Inspire your child success by joining us</p>
                 <a
                   href="#features"
                   className="btn btn-custom btn-lg page-scroll"

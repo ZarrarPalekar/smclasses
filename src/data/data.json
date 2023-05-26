@@ -38,11 +38,6 @@
     },
     {
       "title": "Project Title",
-      "largeImage": "img/portfolio/04-large.jpeg",
-      "smallImage": "img/portfolio/04-small.jpg"
-    },
-    {
-      "title": "Project Title",
       "largeImage": "img/portfolio/05-large.jpeg",
       "smallImage": "img/portfolio/05-small.jpg"
     }
@@ -66,34 +61,14 @@
   ],
   "Testimonials": [
     {
-      "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "img": "img/toppers/huma.jpeg",
+      "text": "I have studied from std 8 till my HSC in SM classes. The marks which I scored are because of my mentor's guide, motivation, special attention. It was the best phase of the main part of educational life. i.e basic of education which I received from SM classes. It is an excellent coaching class for all the students. Mentor's keep attention on each and every students and they work on their both strength and weakness. The atmosphere in the class is just awesome. The weekly test boost the confidence of students in studies and also for their exams. The mentors have  most years of experience. Thank you for all the motivation and guidance...",
+      "name": "Huma Dalwai"
     },
     {
-      "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
+      "img": "img/toppers/ishaan.jpeg",
+      "text": "I studied 9th to 12th from SM classes, it has best mentors in chiplun also they pay attention to each and every student they work on students weakness and make the best out of them and motivate them . The exams are on times and there are weekly exams/ tests to see the improvement of the students and help them to achieve their goals. Hard working teacher and also have 12 + yrs  experience in teaching.",
+      "name": "Ishan Dalvi"
     }
   ],
   "Team": [
