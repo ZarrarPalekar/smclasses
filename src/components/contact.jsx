@@ -6,28 +6,37 @@ const initialState = {
   name: "",
   email: "",
   message: "",
+  phone: "",
 };
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ name, email, message, phone }, setState] = useState(initialState);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
-  const clearState = () => setState({ ...initialState });
+  const clearState = () => {
+    setState({ ...initialState });
+    alert("Enquiry Email sent successfully");
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+    console.log(name, email, message, phone);
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm(
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+        e.target,
+        process.env.REACT_APP_EMAIL_PUBLIC_KEY
+      )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result);
           clearState();
         },
         (error) => {
-          console.log(error.text);
+          console.log(error);
         }
       );
   };
@@ -68,6 +77,20 @@ export const Contact = (props) => {
                         name="email"
                         className="form-control"
                         placeholder="Email"
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number"
                         required
                         onChange={handleChange}
                       />
