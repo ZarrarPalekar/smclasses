@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.3fcb49ec.css",
-    "main.js": "/static/js/main.0591dd76.js",
+    "main.js": "/static/js/main.883b72c4.js",
     "static/media/smclasses-logo.jpeg": "/static/media/smclasses-logo.16b4930466bd6a7ecb43.jpeg",
     "index.html": "/index.html",
     "main.3fcb49ec.css.map": "/static/css/main.3fcb49ec.css.map",
-    "main.0591dd76.js.map": "/static/js/main.0591dd76.js.map"
+    "main.883b72c4.js.map": "/static/js/main.883b72c4.js.map"
   },
   "entrypoints": [
     "static/css/main.3fcb49ec.css",
-    "static/js/main.0591dd76.js"
+    "static/js/main.883b72c4.js"
   ]
 }
