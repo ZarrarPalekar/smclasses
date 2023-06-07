@@ -23,7 +23,6 @@ const Toppers = ({ data }) => {
                       className="member-pic set-bg"
                     />
                     <h5>{d.details}</h5>
-                    <h5>{d.details2}</h5>
                     <p>{d.name}</p>
                   </div>
                 </div>

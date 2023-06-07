@@ -135,8 +135,7 @@
   "Toppers": [
     {
       "img": "img/toppers/huma.jpeg",
-      "details": "90.20% (SSC)",
-      "details2": "88.83% (HSC-Science)",
+      "details": "90.20% (SSC) | 88.83% (HSC-Science)",
       "name": "Huma Dalwai"
     },
     {
@@ -163,6 +162,11 @@
       "img": "img/toppers/adeeya.jpeg",
       "details": "90.80% (SSC)",
       "name": "Adeeya Fakir"
+    },
+    {
+      "img": "img/toppers/sharmin.jpeg",
+      "details": "90.40% (SSC)",
+      "name": "Sharmin Palnaik"
     }
   ]
 }
