@@ -455,22 +455,27 @@ header .intro-text-black {
   color: #666;
 }
 /* Team Section */
-#team {
+#team,
+#subject-toppers {
   padding: 100px 0;
 }
-#team h4 {
+#team h4,
+#subject-toppers h4 {
   margin: 5px 0;
 }
-#team .team-img {
+#team .team-img,
+#subject-toppers .team-img {
   object-fit: cover;
   width: 500px;
   height: 500px;
 }
-#team .thumbnail {
+#team .thumbnail,
+#subject-toppers .thumbnail {
   background: transparent;
   border: 0;
 }
-#team .thumbnail .caption {
+#team .thumbnail .caption,
+#subject-toppers .thumbnail .caption {
   padding: 10px 0 0;
   color: #888;
 }
