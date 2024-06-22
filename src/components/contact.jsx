@@ -177,6 +177,25 @@ export const Contact = (props) => {
               Zarrar Palekar
             </a>
           </p>
+          <a
+            href="https://iconscout.com/icons/avatar"
+            class="text-underline font-size-sm"
+            target="_blank"
+            rel="noreferrer"
+          >
+            avatar
+          </a>{" "}
+          by{" "}
+          <a
+            href="https://iconscout.com/contributors/egor-polyakov"
+            class="text-underline font-size-sm"
+          >
+            Egor Polyakov
+          </a>{" "}
+          on{" "}
+          <a href="https://iconscout.com" class="text-underline font-size-sm">
+            IconScout
+          </a>
         </div>
       </div>
     </div>

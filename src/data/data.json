@@ -168,5 +168,62 @@
       "details": "90.40% (SSC)",
       "name": "Sharmin Palnaik"
     }
+  ],
+  "SubjectToppers": [
+    {
+      "img": "",
+      "details": "99 (Maths) | SSC-2020",
+      "name": "Abdullah Dalvi"
+    },
+    {
+      "img": "img/toppers/humera.jpeg",
+      "details": "99 (Science) | 98 (SS) | SSC-2022",
+      "name": "Humera Kadiri"
+    },
+    {
+      "img": "img/toppers/miran.jpg",
+      "details": "93 (Maths) | HSC-2021",
+      "name": "Miran Wagle"
+    },
+    {
+      "img": "",
+      "details": "94 (Maths) | 90 (Hindi) | SSC-2019",
+      "name": "Safa Desai"
+    },
+    {
+      "img": "",
+      "details": "98 (Maths) | SSC-2021",
+      "name": "Muaz Parkar"
+    },
+    {
+      "img": "img/toppers/adeeya.jpeg",
+      "details": "98 (Maths) | SSC-2021",
+      "name": "Adeeya Fakir"
+    },
+    {
+      "img": "",
+      "details": "97 (Maths) | SSC-2021",
+      "name": "Suhail Dalvi"
+    },
+    {
+      "img": "img/toppers/sharmin.jpeg",
+      "details": " 95 (SS) | SSC-2023",
+      "name": "Sharmin Palnaik"
+    },
+    {
+      "img": "",
+      "details": "92 (English) | SSC-2024",
+      "name": "Sadiya Tambe"
+    },
+    {
+      "img": "",
+      "details": "93 (Maths) | SSC-2024",
+      "name": "Laiba Dalvi"
+    },
+    {
+      "img": "",
+      "details": "95 (Sci) | 94 (Maths) | 93 (Marathi) | SSC-2024",
+      "name": "Shahad Desai"
+    }
   ]
 }
