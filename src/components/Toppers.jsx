@@ -1,5 +1,6 @@
 import React from "react";
 import "./toppers.styles.css";
+import UserAvatar from "../assets/images/user-avatar.svg";
 
 const Toppers = ({ data }) => {
   return (
@@ -18,9 +19,10 @@ const Toppers = ({ data }) => {
                 <div className="col-md-6 col-lg-3">
                   <div className="member">
                     <img
-                      src={d.img}
+                      src={d.img || UserAvatar}
                       alt={d.name}
-                      className="member-pic set-bg"
+                      className={d.img && "member-pic set-bg"}
+                      style={{ width: "200px", height: "200px" }}
                     />
                     <h5>{d.details}</h5>
                     <p>{d.name}</p>
