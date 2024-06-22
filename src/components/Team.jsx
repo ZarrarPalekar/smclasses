@@ -6,7 +6,7 @@ export const Team = (props) => {
       <div className="container">
         <div className="col-md-8 col-md-offset-2 section-title">
           <h2>Meet the Team</h2>
-          <p>We are a team of small yet experienced tutors.</p>
+          <p>We're a small but experienced team of tutors.</p>
         </div>
         <div id="row">
           {props.data
