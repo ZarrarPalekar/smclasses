@@ -4,7 +4,7 @@ import UserAvatar from "../assets/images/user-avatar.svg";
 
 const SubjectToppers = ({ data }) => {
   return (
-    <div id="team" className="text-center">
+    <div id="subject-toppers" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Our Subject Toppers</h2>
