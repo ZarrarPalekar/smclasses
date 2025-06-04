@@ -1,70 +1,118 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/images/smclasses-logo.jpeg";
 
-export const Navigation = (props) => {
-  return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-      <div className="container">
-        <div className="navbar-header">
-          <button
-            type="button"
-            className="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-          >
-            {" "}
-            <span className="sr-only">Toggle navigation</span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-            <span className="icon-bar"></span>{" "}
-          </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
-            <img src={logo} alt="" />
-          </a>{" "}
-        </div>
+export const Navigation = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <nav
+      id="menu"
+      className={`navbar navbar-default navbar-fixed-top ${
+        isScrolled ? "scrolled" : ""
+      }`}
+    >
+      <div className="container navbar-flex">
+        <a className="navbar-brand page-scroll" href="#page-top">
+          <img src={logo} alt="SM Classes Logo" />
+        </a>
+        <button
+          type="button"
+          className={`navbar-toggle ${isMenuOpen ? "active" : ""}`}
+          onClick={toggleMenu}
+          aria-label="Toggle navigation"
+        >
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+        </button>
         <div
-          className="collapse navbar-collapse"
+          className={`collapse navbar-collapse ${isMenuOpen ? "in" : ""}`}
           id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
+              <a
+                href="#features"
+                className="page-scroll"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Features
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
+              <a
+                href="#about"
+                className="page-scroll"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <a
+                href="#services"
+                className="page-scroll"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Services
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="page-scroll">
+              <a
+                href="#portfolio"
+                className="page-scroll"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Gallery
               </a>
             </li>
             <li>
-              <a href="#toppers" className="page-scroll">
+              <a
+                href="#toppers"
+                className="page-scroll"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Toppers
               </a>
             </li>
             <li>
-              <a href="#testimonials" className="page-scroll">
+              <a
+                href="#testimonials"
+                className="page-scroll"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Testimonials
               </a>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
+              <a
+                href="#team"
+                className="page-scroll"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Team
               </a>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
+              <a
+                href="#contact"
+                className="page-scroll"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Contact
               </a>
             </li>

@@ -22,7 +22,6 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message, phone);
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAIL_SERVICE_ID,
@@ -32,7 +31,6 @@ export const Contact = (props) => {
       )
       .then(
         (result) => {
-          console.log(result);
           clearState();
         },
         (error) => {
@@ -41,135 +39,121 @@ export const Contact = (props) => {
       );
   };
   return (
-    <div>
-      <div id="contact">
-        <div className="container">
-          <div className="col-md-8">
-            <div className="row">
-              <div className="section-title">
-                <h2>Get In Touch</h2>
-                <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
-                </p>
+    <section id="contact" className="contact-section">
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">Get In Touch</h2>
+          <p className="section-subtitle">
+            Please fill out the form below to send us an email and we will get
+            back to you as soon as possible.
+          </p>
+        </div>
+        <div className="contact-grid">
+          <div className="contact-form-card">
+            <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <div className="contact-row">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  className="form-control"
+                  placeholder="Name"
+                  required
+                  onChange={handleChange}
+                  value={name}
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  className="form-control"
+                  placeholder="Email"
+                  required
+                  onChange={handleChange}
+                  value={email}
+                />
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        className="form-control"
-                        placeholder="Name"
-                        required
-                        onChange={handleChange}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="form-control"
-                        placeholder="Email"
-                        required
-                        onChange={handleChange}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        className="form-control"
-                        placeholder="Phone Number"
-                        required
-                        onChange={handleChange}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                </div>
-                <div className="form-group">
-                  <textarea
-                    name="message"
-                    id="message"
-                    className="form-control"
-                    rows="4"
-                    placeholder="Message"
-                    required
-                    onChange={handleChange}
-                  ></textarea>
-                  <p className="help-block text-danger"></p>
-                </div>
-                <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-          <div className="col-md-3 col-md-offset-1 contact-info">
-            <div className="contact-item">
-              <h3>Contact Info</h3>
-              <p>
-                <span>
-                  <i className="fa fa-map-marker"></i> Address
-                </span>
-                {props.data ? props.data.address : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-phone"></i> Phone
-                </span>{" "}
-                {props.data ? props.data.phone : "loading"}
-              </p>
-            </div>
-            <div className="contact-item">
-              <p>
-                <span>
-                  <i className="fa fa-envelope-o"></i> Email
-                </span>{" "}
-                {props.data ? props.data.email : "loading"}
-              </p>
-            </div>
-          </div>
-          <div className="col-md-12">
-            <div className="row">
-              <div className="social">
-                <ul>
-                  <li>
-                    <a href={props.data ? `//${props.data.facebook}` : "/"}>
-                      <i className="fa fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? `//${props.data.twitter}` : "/"}>
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? `//${props.data.youtube}` : "/"}>
-                      <i className="fa fa-youtube"></i>
-                    </a>
-                  </li>
-                </ul>
+              <div className="contact-row">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  className="form-control"
+                  placeholder="Phone Number"
+                  required
+                  onChange={handleChange}
+                  value={phone}
+                />
               </div>
+              <div className="contact-row">
+                <textarea
+                  name="message"
+                  id="message"
+                  className="form-control"
+                  rows="4"
+                  placeholder="Message"
+                  required
+                  onChange={handleChange}
+                  value={message}
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-primary btn-lg contact-btn"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div className="contact-info-card">
+            <div className="contact-info-item">
+              <i className="fa fa-map-marker"></i>
+              <div>
+                <span>Address</span>
+                <p>{props.data ? props.data.address : "loading"}</p>
+              </div>
+            </div>
+            <div className="contact-info-item">
+              <i className="fa fa-phone"></i>
+              <div>
+                <span>Phone</span>
+                <p>{props.data ? props.data.phone : "loading"}</p>
+              </div>
+            </div>
+            <div className="contact-info-item">
+              <i className="fa fa-envelope-o"></i>
+              <div>
+                <span>Email</span>
+                <p>{props.data ? props.data.email : "loading"}</p>
+              </div>
+            </div>
+            <div className="contact-social">
+              <a
+                href={props.data ? `//${props.data.facebook}` : "/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-facebook"></i>
+              </a>
+              <a
+                href={props.data ? `//${props.data.twitter}` : "/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-twitter"></i>
+              </a>
+              <a
+                href={props.data ? `//${props.data.youtube}` : "/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa fa-youtube"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div id="footer">
+      <footer className="footer-section">
         <div className="container text-center">
           <p>
             &copy; 2023 SM Classes Developed by{" "}
@@ -177,27 +161,8 @@ export const Contact = (props) => {
               Zarrar Palekar
             </a>
           </p>
-          <a
-            href="https://iconscout.com/icons/avatar"
-            class="text-underline font-size-sm"
-            target="_blank"
-            rel="noreferrer"
-          >
-            avatar
-          </a>{" "}
-          by{" "}
-          <a
-            href="https://iconscout.com/contributors/egor-polyakov"
-            class="text-underline font-size-sm"
-          >
-            Egor Polyakov
-          </a>{" "}
-          on{" "}
-          <a href="https://iconscout.com" class="text-underline font-size-sm">
-            IconScout
-          </a>
         </div>
-      </div>
-    </div>
+      </footer>
+    </section>
   );
 };

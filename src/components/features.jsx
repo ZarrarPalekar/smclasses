@@ -2,24 +2,36 @@ import React from "react";
 
 export const Features = (props) => {
   return (
-    <div id="features" className="text-center">
+    <section id="features" className="features-section">
       <div className="container">
-        <div className="col-md-10 col-md-offset-1 section-title">
-          <h2>Features</h2>
+        <div className="section-header">
+          <h2 className="section-title">Why Choose Us</h2>
+          <p className="section-subtitle">
+            Discover what makes SM Classes the perfect choice for your child's
+            education
+          </p>
         </div>
-        <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} className="col-xs-12 col-md-3">
-                  {" "}
+        <div className="features-grid">
+          {props.data ? (
+            props.data.map((d, i) => (
+              <div key={`${d.title}-${i}`} className="feature-card animate">
+                <div className="feature-icon">
                   <i className={d.icon}></i>
+                </div>
+                <div className="feature-content">
                   <h3>{d.title}</h3>
                   <p>{d.text}</p>
                 </div>
-              ))
-            : "Loading..."}
+              </div>
+            ))
+          ) : (
+            <div className="loading-state">
+              <div className="spinner"></div>
+              <p>Loading features...</p>
+            </div>
+          )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
