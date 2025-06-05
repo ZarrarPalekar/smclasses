@@ -30,10 +30,12 @@ export const Header = (props) => {
                     className="btn btn-primary btn-lg page-scroll"
                     onClick={(e) => {
                       e.preventDefault();
-                      scroll.animateScroll(document.querySelector("#features"));
+                      scroll.animateScroll(
+                        document.querySelector("#recent-results")
+                      );
                     }}
                   >
-                    Learn More
+                    Recent Results
                   </a>
                   <a
                     href="#contact"
@@ -43,7 +45,7 @@ export const Header = (props) => {
                       scroll.animateScroll(document.querySelector("#contact"));
                     }}
                   >
-                    Get Started
+                    Contact Us
                   </a>
                 </div>
               </div>
