@@ -6,7 +6,7 @@ const SubjectToppers = ({ data }) => {
     <section id="subject-toppers" className="toppers-section">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Our Subject Toppers</h2>
+          <h2 className="section-title">Our Previous Subject Toppers</h2>
           <p className="section-subtitle">
             Highlighting the peak of academic achievement in various subjects.
           </p>

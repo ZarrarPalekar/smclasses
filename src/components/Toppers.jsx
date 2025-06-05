@@ -6,7 +6,7 @@ const Toppers = ({ data }) => {
     <section id="toppers" className="toppers-section">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Our Toppers</h2>
+          <h2 className="section-title">Our Previous Toppers</h2>
           <p className="section-subtitle">
             Our students' success speaks volumes about the quality of education
             we provide.

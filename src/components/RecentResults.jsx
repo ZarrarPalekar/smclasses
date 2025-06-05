@@ -34,8 +34,9 @@ const RecentResults = ({ data }) => {
             </div>
           )}
         </div>
+
         <div className="recent-results-section-header">
-          <h2 className="recent-results-section-subtitle ">HSC</h2>
+          <h2 className="recent-results-section-subtitle">HSC</h2>
         </div>
         <div className="recent-results-grid">
           {data && data.HSC ? (
@@ -60,6 +61,54 @@ const RecentResults = ({ data }) => {
               <p>Loading toppers...</p>
             </div>
           )}
+        </div>
+
+        {/* Score Card Table Section */}
+        <div className="score-card-section">
+          <h2 className="recent-results-section-subtitle">Score Card</h2>
+          <div className="score-card-table-container">
+            <table className="score-card-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>SSC</th>
+                  <th>HSC</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Total Students</td>
+                  <td>150</td>
+                  <td>120</td>
+                </tr>
+                <tr>
+                  <td>90% and Above</td>
+                  <td>45</td>
+                  <td>35</td>
+                </tr>
+                <tr>
+                  <td>80-89%</td>
+                  <td>65</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>70-79%</td>
+                  <td>30</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>60-69%</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr>
+                <tr className="highlight-row">
+                  <td>Average Score</td>
+                  <td>85%</td>
+                  <td>82%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
