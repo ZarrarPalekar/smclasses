@@ -2,34 +2,37 @@ import React from "react";
 
 export const Team = (props) => {
   return (
-    <div id="team" className="text-center">
+    <section id="team" className="team-section">
       <div className="container">
-        <div className="col-md-8 col-md-offset-2 section-title">
-          <h2>Meet the Team</h2>
-          <p>We're a small but experienced team of tutors.</p>
+        <div className="section-header">
+          <h2 className="section-title">Meet the Team</h2>
+          <p className="section-subtitle">
+            We're a small but experienced team of tutors.
+          </p>
         </div>
-        <div id="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div
-                  key={`${d.name}-${i}`}
-                  className="col-md-3 col-sm-6 col-lg-6  team"
-                >
-                  <div className="thumbnail">
-                    {" "}
-                    <img src={d.img} alt="..." className="team-img" />
-                    <div className="caption">
-                      <h4>{d.name}</h4>
-                      <p>{d.job}</p>
-                      <p>{d.job1}</p>
-                      <p>{d.job2}</p>
-                    </div>
-                  </div>
+        <div className="team-grid">
+          {props.data ? (
+            props.data.map((d, i) => (
+              <div key={`${d.name}-${i}`} className="team-card">
+                <div className="team-avatar">
+                  <img src={d.img} alt={d.name} className="team-img" />
                 </div>
-              ))
-            : "loading"}
+                <div className="team-details">
+                  <h4 className="team-name">{d.name}</h4>
+                  <p className="team-role">{d.job}</p>
+                  {d.job1 && <p className="team-role-alt">{d.job1}</p>}
+                  {d.job2 && <p className="team-role-alt">{d.job2}</p>}
+                </div>
+              </div>
+            ))
+          ) : (
+            <div className="loading-state">
+              <div className="spinner"></div>
+              <p>Loading team...</p>
+            </div>
+          )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

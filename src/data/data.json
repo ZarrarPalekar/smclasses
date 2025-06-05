@@ -132,6 +132,112 @@
       "text": "MCQ practice for JEE/CET/NEET."
     }
   ],
+  "RecentResults": {
+    "SSC": [
+      {
+        "img": "",
+        "details": "90.20%",
+        "name": "Abc Dalwai"
+      },
+      {
+        "img": "",
+        "details": "90.13%",
+        "name": "Def Wagle"
+      },
+      {
+        "img": "",
+        "details": "88.17%",
+        "name": "Ghi Dalvi"
+      },
+      {
+        "img": "",
+        "details": "89%",
+        "name": "Jkl Kalokhe"
+      },
+      {
+        "img": "",
+        "details": "95.00%",
+        "name": "Mno Kadiri"
+      },
+      {
+        "img": "",
+        "details": "90.80%",
+        "name": "Pqr Fakir"
+      },
+      {
+        "img": "",
+        "details": "90.40%",
+        "name": "Stu Palnaik"
+      },
+      {
+        "img": "",
+        "details": "92%",
+        "name": "VW Tambe"
+      },
+      {
+        "img": "",
+        "details": "91%",
+        "name": "Xy Dalvi"
+      },
+      {
+        "img": "",
+        "details": "89.40%",
+        "name": "Z Desai"
+      }
+    ],
+    "HSC": [
+      {
+        "img": "",
+        "details": "90.20%",
+        "name": "Abc"
+      },
+      {
+        "img": "",
+        "details": "90.13%",
+        "name": "Def"
+      },
+      {
+        "img": "",
+        "details": "88.17%",
+        "name": "Ghi Dalvi"
+      },
+      {
+        "img": "",
+        "details": "89%",
+        "name": "Jkl Kalokhe"
+      },
+      {
+        "img": "",
+        "details": "95.00%",
+        "name": "Mno Kadiri"
+      },
+      {
+        "img": "",
+        "details": "90.80%",
+        "name": "Pqr Fakir"
+      },
+      {
+        "img": "",
+        "details": "90.40%",
+        "name": "Stu Palnaik"
+      },
+      {
+        "img": "",
+        "details": "92%",
+        "name": "VW Tambe"
+      },
+      {
+        "img": "",
+        "details": "91%",
+        "name": "Xy Dalvi"
+      },
+      {
+        "img": "",
+        "details": "89.40%",
+        "name": "Z Desai"
+      }
+    ]
+  },
   "Toppers": [
     {
       "img": "img/toppers/huma.jpeg",

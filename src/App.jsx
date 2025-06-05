@@ -15,6 +15,7 @@ import Whatsapp from "./components/Whatsapp.component";
 import Call from "./components/Call.component";
 import Toppers from "./components/Toppers";
 import SubjectToppers from "./components/SubjectToppers";
+import RecentResults from "./components/RecentResults";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -32,9 +33,11 @@ const App = () => {
       <Call />
       <Whatsapp />
       <Navigation />
+
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
+      <RecentResults data={landingPageData.RecentResults} />
       <Services data={landingPageData.Services} />
       <Gallery data={landingPageData.Gallery} />
       <Toppers data={landingPageData.Toppers} />
