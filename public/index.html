@@ -5,7 +5,15 @@
   />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#0f172a" />
+  <script>
+    // Set initial theme to dark mode to prevent flash
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      const theme = savedTheme || "dark";
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
   <title>Best Coaching Class In Chiplun | SM Classes | Chiplun</title>
   <meta
     name="description"
