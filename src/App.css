@@ -638,7 +638,7 @@ textarea,
 .hero-section {
   position: relative;
   height: 100vh;
-  min-height: 600px;
+  min-height: 100vh;
   background: linear-gradient(
     135deg,
     var(--primary-color),
@@ -646,7 +646,8 @@ textarea,
     var(--accent-color)
   );
   overflow: hidden;
-  margin-top: 70px; /* Account for fixed navbar */
+  padding-top: 70px; /* Account for fixed navbar */
+  box-sizing: border-box;
 }
 
 [data-theme="dark"] .hero-section {
@@ -660,7 +661,7 @@ textarea,
 
 .hero-overlay {
   position: absolute;
-  top: 0;
+  top: 70px; /* Start below navbar */
   left: 0;
   right: 0;
   bottom: 0;
