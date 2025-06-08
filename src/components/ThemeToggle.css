@@ -2,24 +2,36 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   cursor: pointer;
   padding: 0.5rem 0.75rem;
   border-radius: 6px;
   transition: all var(--transition-speed) ease;
-  color: #ffffff;
+  color: #1f2937;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 700;
   white-space: nowrap;
   backdrop-filter: blur(10px);
 }
 
+[data-theme="dark"] .theme-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #f8fafc;
+}
+
 .theme-toggle:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.2);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="dark"] .theme-toggle {
@@ -88,25 +100,36 @@
 
 .theme-toggle-label {
   font-size: 0.875rem;
-  font-weight: 600;
-  color: #ffffff;
+  font-weight: 700;
+  color: #1f2937;
   transition: color var(--transition-speed) ease;
   min-width: 35px;
   text-align: left;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.025em;
+}
+
+[data-theme="dark"] .theme-toggle-label {
+  color: #f8fafc;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .theme-toggle:hover .theme-toggle-label {
+  color: #1f2937;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] .theme-toggle:hover .theme-toggle-label {
   color: #ffffff;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
 /* Mobile theme toggle in navbar */
 .theme-toggle-mobile {
   padding: 0.5rem;
   gap: 0.25rem;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 6px;
   backdrop-filter: blur(10px);
 }
@@ -129,8 +152,8 @@
 }
 
 [data-theme="dark"] .theme-toggle-mobile {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 [data-theme="dark"] .theme-toggle-mobile .theme-toggle-thumb {
