@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/images/smclasses-logo.jpeg";
+import ThemeToggle from "./ThemeToggle";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,16 +30,18 @@ export const Navigation = () => {
         <a className="navbar-brand page-scroll" href="#page-top">
           <img src={logo} alt="SM Classes Logo" />
         </a>
-        <button
-          type="button"
-          className={`navbar-toggle ${isMenuOpen ? "active" : ""}`}
-          onClick={toggleMenu}
-          aria-label="Toggle navigation"
-        >
-          <span className="icon-bar"></span>
-          <span className="icon-bar"></span>
-          <span className="icon-bar"></span>
-        </button>
+        <div className="navbar-controls">
+          <button
+            type="button"
+            className={`navbar-toggle ${isMenuOpen ? "active" : ""}`}
+            onClick={toggleMenu}
+            aria-label="Toggle navigation"
+          >
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+            <span className="icon-bar"></span>
+          </button>
+        </div>
         <div
           className={`collapse navbar-collapse ${isMenuOpen ? "in" : ""}`}
           id="bs-example-navbar-collapse-1"
@@ -115,6 +118,9 @@ export const Navigation = () => {
               >
                 Contact
               </a>
+            </li>
+            <li className="nav-theme-toggle">
+              <ThemeToggle />
             </li>
           </ul>
         </div>

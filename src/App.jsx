@@ -16,6 +16,7 @@ import Call from "./components/Call.component";
 import Toppers from "./components/Toppers";
 import SubjectToppers from "./components/SubjectToppers";
 import RecentResults from "./components/RecentResults";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -29,23 +30,25 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <Call />
-      <Whatsapp />
-      <Navigation />
+    <ThemeProvider>
+      <div className="app">
+        <Call />
+        <Whatsapp />
+        <Navigation />
 
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
-      {/* <RecentResults data={landingPageData.RecentResults} /> */}
-      <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery} />
-      <Toppers data={landingPageData.Toppers} />
-      <SubjectToppers data={landingPageData.SubjectToppers} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
-    </div>
+        <Header data={landingPageData.Header} />
+        <Features data={landingPageData.Features} />
+        <About data={landingPageData.About} />
+        <RecentResults data={landingPageData.RecentResults} />
+        <Services data={landingPageData.Services} />
+        <Gallery data={landingPageData.Gallery} />
+        <Toppers data={landingPageData.Toppers} />
+        <SubjectToppers data={landingPageData.SubjectToppers} />
+        <Testimonials data={landingPageData.Testimonials} />
+        <Team data={landingPageData.Team} />
+        <Contact data={landingPageData.Contact} />
+      </div>
+    </ThemeProvider>
   );
 };
 
