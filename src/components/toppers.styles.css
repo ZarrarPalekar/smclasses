@@ -1,6 +1,7 @@
 .member {
   text-align: center;
   margin-bottom: 40px;
+  transition: all var(--transition-speed) ease;
 }
 
 .member .member-pic {
@@ -12,6 +13,8 @@
   position: relative;
   display: inline-block;
   object-position: 0pt -25pt;
+  border: 3px solid var(--border-color);
+  transition: all var(--transition-speed) ease;
 }
 
 .set-bg {
@@ -21,15 +24,20 @@
 }
 
 .member-pic:hover {
-  background: #000;
-  opacity: 0.7;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+  transform: scale(1.05);
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 25px rgba(79, 70, 229, 0.3);
+  transition: all var(--transition-speed) ease;
 }
 
 .member p {
-  color: yellow;
+  color: var(--warning-color);
   margin-bottom: 0;
-  font-weight: 400;
+  font-weight: 600;
+  transition: color var(--transition-speed) ease;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .member-pic:hover {
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
 }

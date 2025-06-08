@@ -106,25 +106,27 @@ export const Contact = (props) => {
             </form>
           </div>
           <div className="contact-info-card">
-            <div className="contact-info-item">
-              <i className="fa fa-map-marker"></i>
-              <div>
-                <span>Address</span>
-                <p>{props.data ? props.data.address : "loading"}</p>
+            <div className="contact-info-items">
+              <div className="contact-info-item">
+                <i className="fa fa-map-marker"></i>
+                <div>
+                  <span>Address</span>
+                  <p>{props.data ? props.data.address : "loading"}</p>
+                </div>
               </div>
-            </div>
-            <div className="contact-info-item">
-              <i className="fa fa-phone"></i>
-              <div>
-                <span>Phone</span>
-                <p>{props.data ? props.data.phone : "loading"}</p>
+              <div className="contact-info-item">
+                <i className="fa fa-phone"></i>
+                <div>
+                  <span>Phone</span>
+                  <p>{props.data ? props.data.phone : "loading"}</p>
+                </div>
               </div>
-            </div>
-            <div className="contact-info-item">
-              <i className="fa fa-envelope-o"></i>
-              <div>
-                <span>Email</span>
-                <p>{props.data ? props.data.email : "loading"}</p>
+              <div className="contact-info-item">
+                <i className="fa fa-envelope-o"></i>
+                <div>
+                  <span>Email</span>
+                  <p>{props.data ? props.data.email : "loading"}</p>
+                </div>
               </div>
             </div>
             <div className="contact-social">
@@ -153,16 +155,6 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
-      <footer className="footer-section">
-        <div className="container text-center">
-          <p>
-            &copy; 2023 SM Classes Developed by{" "}
-            <a href="https://www.zarrarpalekar.com" rel="nofollow">
-              Zarrar Palekar
-            </a>
-          </p>
-        </div>
-      </footer>
     </section>
   );
 };
