@@ -1,0 +1,156 @@
+.toppers-section {
+  padding: var(--section-padding);
+  background: linear-gradient(135deg, var(--background-alt) 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.toppers-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--primary-light) 50%,
+    transparent 100%
+  );
+}
+
+.toppers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  padding: var(--spacing-lg) 0;
+  position: relative;
+}
+
+.topper-card {
+  background: var(--background-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+  transition: all var(--transition-speed) var(--transition-bounce);
+  position: relative;
+  overflow: hidden;
+}
+
+.topper-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  opacity: 0;
+  transition: opacity var(--transition-speed) ease;
+}
+
+.topper-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--box-shadow-xl);
+}
+
+.topper-card:hover::before {
+  opacity: 1;
+}
+
+.topper-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: var(--spacing-lg);
+  box-shadow: var(--box-shadow-lg);
+  background: var(--background-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform var(--transition-speed) var(--transition-bounce);
+}
+
+.topper-card:hover .topper-avatar {
+  transform: scale(1.05);
+}
+
+.topper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform var(--transition-speed) ease;
+}
+
+.topper-card:hover .topper-img {
+  transform: scale(1.1);
+}
+
+.topper-details {
+  text-align: center;
+  padding: 0 var(--spacing-sm);
+}
+
+.topper-score {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--spacing-sm);
+}
+
+.topper-name {
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .toppers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .topper-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .topper-card {
+    padding: var(--spacing-lg) var(--spacing-sm) var(--spacing-md);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .toppers-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .topper-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .topper-score {
+    font-size: var(--font-size-base);
+  }
+
+  .topper-name {
+    font-size: var(--font-size-lg);
+  }
+}

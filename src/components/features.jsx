@@ -6,7 +6,7 @@ export const Features = (props) => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Why Choose Us</h2>
-          <p className="section-subtitle">
+          <p className="section-subtitle features-subtitle-override">
             Discover what makes SM Classes the perfect choice for your child's
             education
           </p>

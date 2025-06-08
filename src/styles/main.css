@@ -1,0 +1,21 @@
+/* Import Variables and Base Styles */
+@import "./variables.css";
+@import "./base.css";
+
+/* Import Component Styles */
+@import "./components/navbar.css";
+@import "./components/card.css";
+
+/* Import Section Styles */
+@import "./sections/hero.css";
+@import "./sections/features.css";
+@import "./sections/about.css";
+@import "./sections/services.css";
+@import "./sections/toppers.css";
+@import "./sections/testimonials.css";
+@import "./sections/team.css";
+@import "./sections/contact.css";
+@import "./sections/footer.css";
+
+/* Import Utility Classes */
+@import "./utilities.css";
