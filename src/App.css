@@ -1732,9 +1732,9 @@ textarea,
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Equal width columns */
   gap: 2.5rem;
-  align-items: flex-start;
+  align-items: stretch; /* Make cards same height */
   margin-top: 2rem;
 }
 
@@ -1746,7 +1746,8 @@ textarea,
   padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between; /* Better space distribution */
+  height: 100%; /* Fill container height */
   transition: all var(--transition-speed) ease;
 }
 
@@ -1774,8 +1775,10 @@ textarea,
   padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Better space distribution */
   gap: 1.5rem;
   align-items: flex-start;
+  height: 100%; /* Fill container height */
   transition: all var(--transition-speed) ease;
 }
 
@@ -1805,10 +1808,18 @@ textarea,
   font-size: 1rem;
 }
 
+/* Contact info items container */
+.contact-info-items {
+  flex: 1; /* Take up available space */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .contact-social {
   display: flex;
   gap: 1.2rem;
-  margin-top: 1.5rem;
+  margin-top: auto; /* Push to bottom */
 }
 
 .contact-social a {
