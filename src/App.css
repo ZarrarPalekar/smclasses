@@ -213,6 +213,14 @@ body {
   flex-shrink: 0;
 }
 
+.navbar-theme-toggle {
+  display: none; /* Hidden on desktop by default */
+}
+
+.desktop-only {
+  display: flex; /* Show desktop theme toggle */
+}
+
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -328,6 +336,15 @@ body {
     align-items: center;
   }
 
+  .navbar-theme-toggle {
+    display: flex !important; /* Show mobile theme toggle */
+    order: 1;
+  }
+
+  .desktop-only {
+    display: none !important; /* Hide desktop theme toggle */
+  }
+
   .navbar-collapse {
     display: none;
     position: absolute;
@@ -406,7 +423,8 @@ body {
     border-bottom-color: rgba(255, 255, 255, 0.05);
   }
 
-  .nav-theme-toggle {
+  /* Desktop theme toggle in menu - keep for desktop */
+  .nav-theme-toggle.desktop-only {
     margin-left: 0;
     padding: 1rem 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -415,13 +433,13 @@ body {
     justify-content: center;
   }
 
-  .nav-theme-toggle .theme-toggle {
+  .nav-theme-toggle.desktop-only .theme-toggle {
     justify-content: center;
     background: rgba(79, 70, 229, 0.1);
     border-color: rgba(79, 70, 229, 0.2);
   }
 
-  [data-theme="dark"] .nav-theme-toggle {
+  [data-theme="dark"] .nav-theme-toggle.desktop-only {
     border-top-color: rgba(255, 255, 255, 0.05);
   }
 

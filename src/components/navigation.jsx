@@ -31,6 +31,9 @@ export const Navigation = () => {
           <img src={logo} alt="SM Classes Logo" />
         </a>
         <div className="navbar-controls">
+          <div className="navbar-theme-toggle">
+            <ThemeToggle className="theme-toggle-mobile" />
+          </div>
           <button
             type="button"
             className={`navbar-toggle ${isMenuOpen ? "active" : ""}`}
@@ -119,7 +122,7 @@ export const Navigation = () => {
                 Contact
               </a>
             </li>
-            <li className="nav-theme-toggle">
+            <li className="nav-theme-toggle desktop-only">
               <ThemeToggle />
             </li>
           </ul>

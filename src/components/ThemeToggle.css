@@ -101,6 +101,42 @@
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+/* Mobile theme toggle in navbar */
+.theme-toggle-mobile {
+  padding: 0.5rem;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.theme-toggle-mobile .theme-toggle-label {
+  display: none; /* Hide text on mobile */
+}
+
+.theme-toggle-mobile .theme-toggle-track {
+  width: 36px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.theme-toggle-mobile .theme-toggle-thumb {
+  width: 14px;
+  height: 14px;
+  top: 1.5px;
+  left: 1.5px;
+}
+
+[data-theme="dark"] .theme-toggle-mobile {
+  background: rgba(0, 0, 0, 0.25);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .theme-toggle-mobile .theme-toggle-thumb {
+  transform: translateX(14px);
+}
+
 /* Compact version for mobile */
 @media (max-width: 768px) {
   .theme-toggle-compact {
