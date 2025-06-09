@@ -996,7 +996,8 @@ textarea,
 }
 
 /* Dark mode specific fixes for features section - using your bg-main color */
-[data-theme="dark"] .features-section {
+[data-theme="dark"] .features-section,
+[data-theme="dark"] #features {
   background-color: #121212 !important;
   color: #e0e0e0 !important;
 }

@@ -50,8 +50,10 @@ const RecentResults = ({ data }) => {
                   />
                 </div>
                 <div className="topper-details">
-                  <h5 className="topper-score">{d.details}</h5>
-                  <p className="topper-name">{d.name}</p>
+                  {/* <h5 className="topper-score">{d.details}</h5>
+                  <p className="topper-name">{d.name}</p> */}
+                  <h5 className="topper-score">Coming Soon</h5>
+                  <p className="topper-name">Coming Soon</p>
                 </div>
               </div>
             ))
@@ -78,33 +80,33 @@ const RecentResults = ({ data }) => {
               <tbody>
                 <tr>
                   <td>Total Students</td>
-                  <td>150</td>
-                  <td>120</td>
+                  <td>Coming Soon</td>
+                  <td>Coming Soon</td>
                 </tr>
                 <tr>
                   <td>90% and Above</td>
-                  <td>45</td>
-                  <td>35</td>
+                  <td>Coming Soon</td>
+                  <td>Coming Soon</td>
                 </tr>
                 <tr>
                   <td>80-89%</td>
-                  <td>65</td>
-                  <td>50</td>
+                  <td>Coming Soon</td>
+                  <td>Coming Soon</td>
                 </tr>
                 <tr>
                   <td>70-79%</td>
-                  <td>30</td>
-                  <td>25</td>
+                  <td>Coming Soon</td>
+                  <td>Coming Soon</td>
                 </tr>
                 <tr>
                   <td>60-69%</td>
-                  <td>10</td>
-                  <td>10</td>
+                  <td>Coming Soon</td>
+                  <td>Coming Soon</td>
                 </tr>
                 <tr className="highlight-row">
                   <td>Average Score</td>
-                  <td>85%</td>
-                  <td>82%</td>
+                  <td>Coming Soon</td>
+                  <td>Coming Soon</td>
                 </tr>
               </tbody>
             </table>
