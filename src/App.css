@@ -26,12 +26,12 @@
   --section-light-primary: #ffffff;
   --section-light-secondary: #e2e8f0;
 
-  /* Highlight Section Colors for Key Sections */
+  /* Highlight Section Colors for Key Sections - Enhanced for better contrast */
   --section-highlight-light: linear-gradient(
     135deg,
-    #f0f9ff 0%,
-    #e0f2fe 50%,
-    #f0f9ff 100%
+    #dbeafe 0%,
+    #bfdbfe 50%,
+    #dbeafe 100%
   );
   --section-highlight-dark: linear-gradient(
     135deg,
@@ -1536,6 +1536,8 @@ textarea,
   transition: background-color var(--transition-speed) ease;
   position: relative;
   min-height: auto;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 /* Dark mode specific fixes for toppers section - HIGHLIGHT SECTION */
@@ -1543,6 +1545,8 @@ textarea,
 [data-theme="dark"] #toppers {
   background: var(--section-highlight-dark) !important;
   color: #e0e0e0 !important;
+  box-shadow: none;
+  border: none;
 }
 
 /* Light mode specific styling for SubjectToppers - HIGHLIGHT SECTION */
@@ -1552,11 +1556,15 @@ textarea,
   padding: var(--section-padding) !important;
   position: relative;
   min-height: auto;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 [data-theme="dark"] #subject-toppers {
   background: var(--section-highlight-dark) !important;
   color: #e0e0e0 !important;
+  box-shadow: none;
+  border: none;
 }
 
 [data-theme="dark"] .toppers-section *,
@@ -2136,6 +2144,8 @@ textarea,
   color: var(--text-color) !important;
   position: relative;
   min-height: auto;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 /* Dark mode specific fixes for recent-results section - HIGHLIGHT SECTION */
@@ -2143,6 +2153,8 @@ textarea,
 [data-theme="dark"] #recent-results {
   background: var(--section-highlight-dark) !important;
   color: #e0e0e0 !important;
+  box-shadow: none;
+  border: none;
 }
 
 [data-theme="dark"] .recent-results-section *,
@@ -2216,9 +2228,20 @@ textarea,
 
 /* Enhanced styling for highlight sections - removed to prevent cropping */
 
-/* Subtle separator between Toppers and SubjectToppers sections */
+/* Subtle separator between highlight sections */
+/* Recent Results bottom border */
+#recent-results {
+  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+  margin-bottom: 0;
+}
+
+[data-theme="dark"] #recent-results {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Toppers bottom border */
 #toppers {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
   margin-bottom: 0;
 }
 
@@ -2226,6 +2249,7 @@ textarea,
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* SubjectToppers with extra padding */
 #subject-toppers {
   margin-top: 0;
   padding-top: calc(var(--section-padding) + 0.5rem);
