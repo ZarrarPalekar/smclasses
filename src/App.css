@@ -22,6 +22,10 @@
   --surface-color: #f8fafc;
   --surface-elevated: #f1f5f9;
 
+  /* Light Mode Alternating Section Colors */
+  --section-light-primary: #ffffff;
+  --section-light-secondary: #f8fafc;
+
   /* Border & Divider Colors */
   --border-color: #e2e8f0;
   --border-light: #f1f5f9;
@@ -859,7 +863,8 @@ textarea,
   margin-top: 2rem;
 }
 
-.btn-outline {
+/* Hero section specific outline button styling */
+.hero-section .btn-outline {
   background: transparent;
   border: 2px solid white;
   color: white;
@@ -867,12 +872,44 @@ textarea,
   border-radius: var(--border-radius);
   font-weight: 500;
   transition: all var(--transition-speed) ease;
+  text-decoration: none;
 }
 
-.btn-outline:hover {
+.hero-section .btn-outline:hover {
   background: white;
   color: var(--primary-color);
   transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* Ensure hero buttons are visible in both themes */
+[data-theme="light"] .hero-section .btn-outline,
+[data-theme="dark"] .hero-section .btn-outline {
+  border-color: white !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+[data-theme="light"] .hero-section .btn-outline:hover,
+[data-theme="dark"] .hero-section .btn-outline:hover {
+  background: white !important;
+  color: var(--primary-color) !important;
+  text-decoration: none !important;
+}
+
+/* Additional specificity for hero section buttons */
+.hero-section .hero-buttons .btn-outline {
+  border: 2px solid white !important;
+  color: white !important;
+  background: transparent !important;
+  text-decoration: none !important;
+}
+
+.hero-section .hero-buttons .btn-outline:hover {
+  background: white !important;
+  color: var(--primary-color) !important;
+  border-color: white !important;
+  text-decoration: none !important;
 }
 
 .hero-shape {
@@ -939,7 +976,7 @@ textarea,
 /* Features Section Styles */
 .features-section {
   padding: var(--section-padding);
-  background-color: var(--background-secondary);
+  background-color: var(--section-light-secondary);
   transition: background-color var(--transition-speed) ease;
 }
 
@@ -1168,7 +1205,7 @@ textarea,
 /* About Section Styles */
 .about-section {
   padding: var(--section-padding);
-  background: var(--background-color);
+  background: var(--section-light-primary);
   transition: background-color var(--transition-speed) ease;
 }
 
@@ -1285,10 +1322,10 @@ textarea,
   }
 }
 
-/* Services Section Styles */
+/* Services Section Styles - should be primary (position 5) */
 .services-section {
   padding: var(--section-padding);
-  background: var(--background-secondary);
+  background: var(--section-light-primary);
   transition: background-color var(--transition-speed) ease;
 }
 
@@ -1393,10 +1430,10 @@ textarea,
   }
 }
 
-/* Gallery Section Styles */
+/* Gallery Section Styles - should be secondary (position 6) */
 .gallery-section {
   padding: var(--section-padding);
-  background: var(--background-color);
+  background: var(--section-light-secondary);
   transition: background-color var(--transition-speed) ease;
 }
 
@@ -1475,10 +1512,12 @@ textarea,
   }
 }
 
-/* Toppers Section Styles */
-.toppers-section {
+/* Toppers Section Styles - should be primary (position 7) */
+.toppers-section,
+#toppers {
   padding: var(--section-padding);
-  background: var(--background-secondary);
+  background: var(--section-light-primary) !important;
+  color: var(--text-color) !important;
   transition: background-color var(--transition-speed) ease;
 }
 
@@ -1487,6 +1526,13 @@ textarea,
 [data-theme="dark"] #toppers {
   background: #1e1e1e !important;
   color: #e0e0e0 !important;
+}
+
+/* Light mode specific styling for SubjectToppers - should be secondary (position 8) */
+#subject-toppers {
+  background: var(--section-light-secondary) !important;
+  color: var(--text-color) !important;
+  padding: var(--section-padding) !important;
 }
 
 [data-theme="dark"] #subject-toppers {
@@ -1597,10 +1643,10 @@ textarea,
   }
 }
 
-/* Testimonials Section Styles */
+/* Testimonials Section Styles - should be primary (position 9) */
 .testimonials-section {
   padding: var(--section-padding);
-  background: var(--background-color);
+  background: var(--section-light-primary);
   transition: background-color var(--transition-speed) ease;
 }
 
@@ -1703,10 +1749,10 @@ textarea,
   }
 }
 
-/* Team Section Styles */
+/* Team Section Styles - should be secondary (position 10) */
 .team-section {
   padding: var(--section-padding);
-  background: var(--background-secondary);
+  background: var(--section-light-secondary);
   transition: background-color var(--transition-speed) ease;
 }
 
@@ -1824,10 +1870,12 @@ textarea,
   }
 }
 
-/* Contact Section Styles */
-.contact-section {
+/* Contact Section Styles - should be primary (position 11) */
+.contact-section,
+#contact {
   padding: 5rem 0; /* Restore normal padding */
-  background: var(--background-color);
+  background: var(--section-light-primary) !important;
+  color: var(--text-color) !important;
   transition: background-color var(--transition-speed) ease;
 }
 
@@ -1972,8 +2020,9 @@ textarea,
   padding-bottom: 3rem; /* Add spacing between content and footer */
 }
 
+/* Footer Section - should be secondary (position 12) */
 .footer-section {
-  background: var(--background-tertiary);
+  background: var(--section-light-secondary);
   padding: 2rem 0 0.5rem 0;
   transition: background-color var(--transition-speed) ease;
   width: 100%;
@@ -2060,10 +2109,12 @@ textarea,
   padding: 0;
 }
 
-/* Recent Results Section Styles */
-.recent-results-section {
+/* Recent Results Section Styles - should be secondary (position 4) */
+.recent-results-section,
+#recent-results {
   padding: var(--section-padding);
-  background: #f8fafc;
+  background: var(--section-light-secondary) !important;
+  color: var(--text-color) !important;
 }
 
 /* Dark mode specific fixes for recent-results section - using your bg-main color */
@@ -2087,6 +2138,53 @@ textarea,
 [data-theme="dark"] #recent-results .section-subtitle {
   color: #b0b0b0 !important;
   opacity: 1 !important;
+}
+
+/* Light mode text color fixes for sections with legacy blue gradients */
+[data-theme="light"] #recent-results,
+[data-theme="light"] #toppers,
+[data-theme="light"] #subject-toppers {
+  color: var(--text-color) !important;
+}
+
+[data-theme="light"] #recent-results *,
+[data-theme="light"] #toppers *,
+[data-theme="light"] #subject-toppers * {
+  color: var(--text-color) !important;
+}
+
+[data-theme="light"] #recent-results .section-title,
+[data-theme="light"] #toppers .section-title,
+[data-theme="light"] #subject-toppers .section-title {
+  color: var(--text-color) !important;
+}
+
+[data-theme="light"] #recent-results .section-subtitle,
+[data-theme="light"] #toppers .section-subtitle,
+[data-theme="light"] #subject-toppers .section-subtitle {
+  color: var(--text-secondary) !important;
+}
+
+/* Light mode text color fixes for Contact section */
+[data-theme="light"] #contact {
+  color: var(--text-color) !important;
+}
+
+[data-theme="light"] #contact * {
+  color: var(--text-color) !important;
+}
+
+[data-theme="light"] #contact .section-title {
+  color: var(--text-color) !important;
+}
+
+[data-theme="light"] #contact .section-subtitle {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="light"] #contact h2,
+[data-theme="light"] #contact h3 {
+  color: var(--text-color) !important;
 }
 
 .recent-results-section-header {

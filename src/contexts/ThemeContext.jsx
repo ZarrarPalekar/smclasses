@@ -12,14 +12,14 @@ export const useTheme = () => {
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    // Check for saved theme preference or default to dark mode
+    // Check for saved theme preference or default to light mode
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
       return savedTheme;
     }
 
-    // Default to dark mode instead of checking system preference
-    return "dark";
+    // Default to light mode
+    return "light";
   });
 
   const toggleTheme = () => {
@@ -63,7 +63,7 @@ export const ThemeProvider = ({ children }) => {
       // Only auto-switch if user hasn't manually set a preference
       const savedTheme = localStorage.getItem("theme");
       if (!savedTheme) {
-        // Keep dark mode as default, but allow system preference changes
+        // Keep light mode as default, but allow system preference changes
         setTheme(e.matches ? "dark" : "light");
       }
     };
