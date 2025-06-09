@@ -26,6 +26,20 @@
   --section-light-primary: #ffffff;
   --section-light-secondary: #e2e8f0;
 
+  /* Highlight Section Colors for Key Sections */
+  --section-highlight-light: linear-gradient(
+    135deg,
+    #f0f9ff 0%,
+    #e0f2fe 50%,
+    #f0f9ff 100%
+  );
+  --section-highlight-dark: linear-gradient(
+    135deg,
+    #1e293b 0%,
+    #334155 50%,
+    #1e293b 100%
+  );
+
   /* Border & Divider Colors */
   --border-color: #e2e8f0;
   --border-light: #f1f5f9;
@@ -1513,31 +1527,35 @@ textarea,
   }
 }
 
-/* Toppers Section Styles - should be primary (position 7) */
+/* Toppers Section Styles - HIGHLIGHT SECTION */
 .toppers-section,
 #toppers {
   padding: var(--section-padding);
-  background: var(--section-light-primary) !important;
+  background: var(--section-highlight-light) !important;
   color: var(--text-color) !important;
   transition: background-color var(--transition-speed) ease;
+  position: relative;
+  min-height: auto;
 }
 
-/* Dark mode specific fixes for toppers section - using your color scheme */
+/* Dark mode specific fixes for toppers section - HIGHLIGHT SECTION */
 [data-theme="dark"] .toppers-section,
 [data-theme="dark"] #toppers {
-  background: #1e1e1e !important;
+  background: var(--section-highlight-dark) !important;
   color: #e0e0e0 !important;
 }
 
-/* Light mode specific styling for SubjectToppers - should be secondary (position 8) */
+/* Light mode specific styling for SubjectToppers - HIGHLIGHT SECTION */
 #subject-toppers {
-  background: var(--section-light-secondary) !important;
+  background: var(--section-highlight-light) !important;
   color: var(--text-color) !important;
   padding: var(--section-padding) !important;
+  position: relative;
+  min-height: auto;
 }
 
 [data-theme="dark"] #subject-toppers {
-  background: #121212 !important;
+  background: var(--section-highlight-dark) !important;
   color: #e0e0e0 !important;
 }
 
@@ -2110,18 +2128,20 @@ textarea,
   padding: 0;
 }
 
-/* Recent Results Section Styles - should be secondary (position 4) */
+/* Recent Results Section Styles - HIGHLIGHT SECTION */
 .recent-results-section,
 #recent-results {
   padding: var(--section-padding);
-  background: var(--section-light-secondary) !important;
+  background: var(--section-highlight-light) !important;
   color: var(--text-color) !important;
+  position: relative;
+  min-height: auto;
 }
 
-/* Dark mode specific fixes for recent-results section - using your bg-main color */
+/* Dark mode specific fixes for recent-results section - HIGHLIGHT SECTION */
 [data-theme="dark"] .recent-results-section,
 [data-theme="dark"] #recent-results {
-  background: #121212 !important;
+  background: var(--section-highlight-dark) !important;
   color: #e0e0e0 !important;
 }
 
@@ -2192,6 +2212,23 @@ textarea,
 [data-theme="light"] .features-section,
 [data-theme="light"] #features {
   background-color: var(--section-light-secondary) !important;
+}
+
+/* Enhanced styling for highlight sections - removed to prevent cropping */
+
+/* Subtle separator between Toppers and SubjectToppers sections */
+#toppers {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 0;
+}
+
+[data-theme="dark"] #toppers {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#subject-toppers {
+  margin-top: 0;
+  padding-top: calc(var(--section-padding) + 0.5rem);
 }
 
 .recent-results-section-header {
