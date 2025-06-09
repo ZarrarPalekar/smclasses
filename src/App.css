@@ -974,9 +974,10 @@ textarea,
 }
 
 /* Features Section Styles */
-.features-section {
+.features-section,
+#features {
   padding: var(--section-padding);
-  background-color: var(--section-light-secondary);
+  background-color: var(--section-light-secondary) !important;
   transition: background-color var(--transition-speed) ease;
 }
 
@@ -2185,6 +2186,12 @@ textarea,
 [data-theme="light"] #contact h2,
 [data-theme="light"] #contact h3 {
   color: var(--text-color) !important;
+}
+
+/* Light mode specific override for Features section background */
+[data-theme="light"] .features-section,
+[data-theme="light"] #features {
+  background-color: var(--section-light-secondary) !important;
 }
 
 .recent-results-section-header {
