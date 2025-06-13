@@ -79,20 +79,20 @@ export const Navigation = () => {
             </li>
             <li>
               <a
+                href="#recent-results"
+                className="page-scroll"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Results
+              </a>
+            </li>
+            <li>
+              <a
                 href="#portfolio"
                 className="page-scroll"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Gallery
-              </a>
-            </li>
-            <li>
-              <a
-                href="#toppers"
-                className="page-scroll"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Toppers
               </a>
             </li>
             <li>

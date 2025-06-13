@@ -35,7 +35,7 @@ export const Header = (props) => {
                       );
                     }}
                   >
-                    Recent Results
+                    Our Results
                   </a>
                   <a
                     href="#contact"
