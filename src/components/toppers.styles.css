@@ -41,3 +41,21 @@
 [data-theme="dark"] .member-pic:hover {
   box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
 }
+
+@media screen and (max-width: 768px) {
+  .member .member-pic {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .member .member-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .member {
+    margin-bottom: 24px;
+  }
+}

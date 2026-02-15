@@ -1,0 +1,16 @@
+/* Contact section */
+.contact-section {
+  padding: 2rem 0;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 360px;
+  }
+}

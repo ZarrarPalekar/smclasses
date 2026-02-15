@@ -38,3 +38,27 @@
 [data-theme="dark"] .float:hover {
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
 }
+
+@media screen and (max-width: 768px) {
+  .float {
+    width: 52px;
+    height: 52px;
+    bottom: 32px;
+    right: 20px;
+    font-size: 26px;
+  }
+
+  .my-float {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .float {
+    width: 48px;
+    height: 48px;
+    bottom: 20px;
+    right: 12px;
+    font-size: 22px;
+  }
+}

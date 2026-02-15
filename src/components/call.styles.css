@@ -40,3 +40,27 @@
 [data-theme="dark"] .float-call:hover {
   box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
 }
+
+@media screen and (max-width: 768px) {
+  .float-call {
+    width: 52px;
+    height: 52px;
+    bottom: 100px;
+    right: 24px;
+    font-size: 26px;
+  }
+
+  .my-float-call {
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .float-call {
+    width: 48px;
+    height: 48px;
+    bottom: 84px;
+    right: 16px;
+    font-size: 22px;
+  }
+}

@@ -15,6 +15,23 @@ export const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768 && isMenuOpen) setIsMenuOpen(false);
+    };
+
+    const handleKeydown = (e) => {
+      if (e.key === "Escape") setIsMenuOpen(false);
+    };
+
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("keydown", handleKeydown);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("keydown", handleKeydown);
+    };
+  }, [isMenuOpen]);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -39,6 +56,8 @@ export const Navigation = () => {
             className={`navbar-toggle ${isMenuOpen ? "active" : ""}`}
             onClick={toggleMenu}
             aria-label="Toggle navigation"
+            aria-expanded={isMenuOpen}
+            aria-controls="bs-example-navbar-collapse-1"
           >
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>

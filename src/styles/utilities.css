@@ -1,0 +1,100 @@
+/* Utility and responsive helper classes */
+
+:root {
+  --navbar-height: 64px;
+}
+
+.navbar-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Hamburger/icon bars */
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text-color);
+  margin: 4px 0;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+/* Collapsible nav state */
+.collapse.navbar-collapse.in {
+  display: block;
+}
+
+/* When the UL gets .active make it visible on small screens */
+.nav.navbar-nav.navbar-right.active {
+  display: block;
+}
+
+/* Mobile layout adjustments */
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+
+  .navbar-flex {
+    gap: 0.5rem;
+  }
+
+  .nav.navbar-nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav.navbar-nav.navbar-right {
+    text-align: left;
+  }
+
+  .nav.navbar-nav.navbar-right > li > a {
+    display: block;
+    padding: 0.6rem 0.5rem;
+  }
+}
+
+/* Utility helpers */
+.u-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.u-hidden {
+  display: none !important;
+}
+
+/* Image utility for components that use .img-responsive */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Gallery helpers */
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.gallery-card {
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}

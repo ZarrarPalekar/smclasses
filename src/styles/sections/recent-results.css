@@ -1,0 +1,31 @@
+/* Recent Results / Score Card responsive styles */
+.recent-results-section {
+  padding: 1.5rem 0;
+}
+
+.recent-results-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.score-card-table-container {
+  overflow-x: auto;
+}
+
+.score-card-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* allow horizontal scroll on small screens */
+}
+
+.score-card-table th,
+.score-card-table td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.highlight-row {
+  background: rgba(79, 70, 229, 0.05);
+}
