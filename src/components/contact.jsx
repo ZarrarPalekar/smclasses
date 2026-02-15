@@ -27,7 +27,7 @@ export const Contact = (props) => {
         process.env.REACT_APP_EMAIL_SERVICE_ID,
         process.env.REACT_APP_EMAIL_TEMPLATE_ID,
         e.target,
-        process.env.REACT_APP_EMAIL_PUBLIC_KEY
+        process.env.REACT_APP_EMAIL_PUBLIC_KEY,
       )
       .then(
         (result) => {
@@ -35,7 +35,7 @@ export const Contact = (props) => {
         },
         (error) => {
           console.log(error);
-        }
+        },
       );
   };
   return (
@@ -128,29 +128,6 @@ export const Contact = (props) => {
                   <p>{props.data ? props.data.email : "loading"}</p>
                 </div>
               </div>
-            </div>
-            <div className="contact-social">
-              <a
-                href={props.data ? `//${props.data.facebook}` : "/"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-facebook"></i>
-              </a>
-              <a
-                href={props.data ? `//${props.data.twitter}` : "/"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-twitter"></i>
-              </a>
-              <a
-                href={props.data ? `//${props.data.youtube}` : "/"}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-youtube"></i>
-              </a>
             </div>
           </div>
         </div>
