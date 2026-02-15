@@ -49,7 +49,9 @@ export const Navigation = () => {
           className={`collapse navbar-collapse ${isMenuOpen ? "in" : ""}`}
           id="bs-example-navbar-collapse-1"
         >
-          <ul className="nav navbar-nav navbar-right">
+          <ul
+            className={`nav navbar-nav navbar-right ${isMenuOpen ? "active" : ""}`}
+          >
             <li>
               <a
                 href="#features"
@@ -68,15 +70,7 @@ export const Navigation = () => {
                 About
               </a>
             </li>
-            <li>
-              <a
-                href="#services"
-                className="page-scroll"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Services
-              </a>
-            </li>
+
             <li>
               <a
                 href="#recent-results"
@@ -84,6 +78,15 @@ export const Navigation = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Results
+              </a>
+            </li>
+            <li>
+              <a
+                href="#services"
+                className="page-scroll"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Services
               </a>
             </li>
             <li>
